@@ -56,22 +56,36 @@ img {
 /* #endregion */
 
 /* #region Common */
+.hide {
+    display: none;
+}
+
 .section {
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
     padding: 120px 0;
+  }
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    min-width: 320px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
-.about-list,
-.team-list,
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 .sub-heading {
@@ -170,6 +184,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .nav-list {
@@ -178,6 +193,12 @@ img {
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-link {
@@ -216,6 +237,7 @@ img {
 
 /* #region Logo */
 .logo {
+    display: inline-block;
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 18px;
@@ -223,7 +245,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    padding: 16px 0;
 }
 
 .logo:hover, .logo:focus {
@@ -242,6 +265,12 @@ img {
 /* #region Address */
 .mail-tel {
     font-style: normal;
+}
+
+@media only screen and (max-width: 767px) {
+    .mail-tel {
+        display: none;
+    }
 }
 
 .mail-tel-list {
@@ -323,12 +352,40 @@ img {
 /* #endregion */
 
 /* #region About */
-.about-item {
+.about-list {
     display: flex;
-    width: calc((100% - 24px * 3) / 4);
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-list {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+
+.about-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    width: calc((100% - 24px * 2) / 2);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
 }
 
 .about-icon {
@@ -352,6 +409,17 @@ img {
 .team-container {
     display: flex;
     flex-direction: column;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 24px; */
 }
 
 .member-card {
@@ -386,8 +454,17 @@ img {
 /* #endregion */
 
 /* #region Section Portfolio */
+
 .portfolio-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* gap: 48px; */
     row-gap: 48px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 24px; */
 }
 
 .portfolio-card {
@@ -539,6 +616,22 @@ img {
 .subscribe-icon {
     margin-left: 16px;
     fill: var(--white);
+}
+
+/* #endregion */
+
+/* #region Mobile Menu */
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: none;
+    padding: 0;
+}
+
+.icon-burger {
+    fill: black;
 }
 
 /* #endregion */
