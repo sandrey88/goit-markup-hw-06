@@ -53,6 +53,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* #endregion */
 
 /* #region Common */
@@ -268,6 +269,7 @@ img {
         margin-right: 76px;
     }
 }
+
 /* #endregion */
 
 /* #region Address */
@@ -322,6 +324,7 @@ img {
         transition-property: color;
     }
 }
+
 /* #endregion */
 
 /* #region Section Hero */
@@ -336,7 +339,7 @@ img {
     background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-mob.jpg);
 }
 
-@media (main-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
     .section-hero {
         background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-mob@2x.jpg);
     }
@@ -348,7 +351,7 @@ img {
         max-width: 1157px;
         background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-tabl.jpg);
     }
-    @media (main-resolution: 192dpi) {
+    @media (min-resolution: 192dpi) {
         .section-hero {
             background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-tabl@2x.jpg);
         }
@@ -361,7 +364,7 @@ img {
         max-width: 1440px;
         background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-desk.jpg);
     }
-    @media (main-resolution: 192dpi) {
+    @media (min-resolution: 192dpi) {
         .section-hero {
             background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-desk@2x.jpg);
         }
@@ -590,10 +593,10 @@ img {
     width: 40px;
     height: 40px;
 }
+
 /* #endregion */
 
 /* #region Section Portfolio */
-
 .portfolio-list {
     display: flex;
     align-items: center;
@@ -701,6 +704,7 @@ img {
 .portfolio-card:hover .overlay {
     transform: translateY(0);
 }
+
 /* #endregion */
 
 /* #region Footer */
@@ -885,8 +889,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     padding: 72px 24px 24px 24px;
     border-radius: 4px;
     background-color: var(--dairy);
@@ -894,6 +898,13 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
     transition: transform var(--animation);
+}
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
 }
 
 .modal-close-btn {
@@ -1077,6 +1088,7 @@ input[type="checkbox"]:checked + .modal-form-description > .modal-form-checkbox 
 .modal-btn {
     margin: 0 auto;
 }
+
 /* #endregion */
 
 /* #region Mobile Menu */
@@ -1084,7 +1096,7 @@ input[type="checkbox"]:checked + .modal-form-description > .modal-form-checkbox 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: transparent;
     border: none;
     padding: 0;
 }
