@@ -330,16 +330,28 @@ img {
     padding: 72px 0;
     background-color: var(--navy-blue);
     max-width: 767px;
-    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-mob.jpg);
+}
+
+@media (main-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-mob@2x.jpg);
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .section-hero {
         padding: 112px 0;
         max-width: 1157px;
+        background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-tabl.jpg);
+    }
+    @media (main-resolution: 192dpi) {
+        .section-hero {
+            background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-tabl@2x.jpg);
+        }
     }
 }
 
@@ -347,6 +359,12 @@ img {
     .section-hero {
         padding: 188px 0;
         max-width: 1440px;
+        background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-desk.jpg);
+    }
+    @media (main-resolution: 192dpi) {
+        .section-hero {
+            background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/people-office-desk@2x.jpg);
+        }
     }
 }
 
@@ -615,9 +633,33 @@ img {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+    .portfolio-card {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
 @media only screen and (min-width: 1158px) {
     .portfolio-card {
         width: calc((100% - 24px * 2) / 3);
+    }
+}
+
+.portfolio-card-img {
+    width: 288px;
+    height: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio-card-img {
+        width: 356px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .portfolio-card-img {
+        width: 360px;
     }
 }
 
@@ -664,25 +706,62 @@ img {
 /* #region Footer */
 .footer {
     background-color: var(--navy-blue);
-    padding: 100px 0;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    padding: 96px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        padding-left: 108px;
+        padding-right: 0;
+        align-items: baseline;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-container {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding: 100px 0;
+    }
 }
 
 .footer-logo {
-    margin-right: 120px
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-logo {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-logo {
+        margin-right: 120px;
+    }
 }
 
 .footer-logo .logo {
     display: inline-block;
-    margin-bottom: 16px;
-    margin-right: 0;
+    margin: 0 auto 16px;
+    padding: 0;
 }
 
 .footer-txt {
+    text-align: left;
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -690,17 +769,25 @@ img {
 }
 
 .footer-heading {
-    width: 208px;
+    width: 100%;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--white);
     margin-bottom: 16px;
-    margin-right: 0;
 }
 
-.footer-social-media {
-    margin-right: 80px;
+@media only screen and (min-width: 768px) {
+    .footer-heading {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-social-media {
+        margin-right: 80px;
+    }
 }
 
 .footer-socials {
@@ -723,7 +810,15 @@ img {
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
 }
 
 .subscribe-input {

@@ -123,8 +123,8 @@
                 <h2 class="sub-heading">Our Team</h2>
                 <ul class="team-list">
                     <li class="member-card">
-                        <img src="./images/team/tm-1.jpg" alt="Photo of Mark Guerrero, product designer, from the WebStudio team"
-                            width="264">
+                        <img srcset="./images/team/tm-1.jpg 1x, ./images/team/tm-1@2x.jpg 2x" src="./images/team/tm-1.jpg" alt="Photo of Mark Guerrero, product designer, from the WebStudio team"
+                            width="264" loading="lazy">
                         <div class="member-card-content">
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-txt">Product Designer</p>
@@ -161,7 +161,7 @@
                         </div>
                     </li>
                     <li class="member-card">
-                        <img src="./images/team/tm-2.jpg" alt="Photo of Tom Ford, frontend developer, from the WebStudio team" width="264">
+                        <img srcset="./images/team/tm-2.jpg 1x, ./images/team/tm-2@2x.jpg 2x" src="./images/team/tm-2.jpg" alt="Photo of Tom Ford, frontend developer, from the WebStudio team" width="264" loading="lazy">
                         <div class="member-card-content">
                             <h3 class="card-title">Tom Ford</h3>
                             <p class="card-txt">Frontend Developer</p>
@@ -198,7 +198,7 @@
                         </div>
                     </li>
                     <li class="member-card">
-                        <img src="./images/team/tm-3.jpg" alt="Photo of Camila Garcia, marketing specialist, from the WebStudio team" width="264">
+                        <img srcset="./images/team/tm-3.jpg 1x, ./images/team/tm-3@2x.jpg 2x" src="./images/team/tm-3.jpg" alt="Photo of Camila Garcia, marketing specialist, from the WebStudio team" width="264" loading="lazy">
                         <div class="member-card-content">
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-txt">Marketing</p>
@@ -235,7 +235,7 @@
                         </div>
                     </li>
                     <li class="member-card">
-                        <img src="./images/team/tm-4.jpg" alt="Photo of Daniel Wilson, UI designer, from the WebStudio team" width="264">
+                        <img srcset="./images/team/tm-4.jpg 1x, ./images/team/tm-4@2x.jpg 2x" src="./images/team/tm-4.jpg" alt="Photo of Daniel Wilson, UI designer, from the WebStudio team" width="264" loading="lazy">
                         <div class="member-card-content">
                             <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-txt">UI Designer</p>
@@ -283,7 +283,11 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                            <img src="./images/portfolio/app-concept.jpg" alt="Image of Banking App Interface developed by WebStudio" width="360">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="./images/portfolio/img-1-tabl-min.jpg 1x, ./images/portfolio/img-1-tabl@2x-min.jpg 2x" type="image/jpg" />
+                                <source media="(min-width: 1158px)" srcset="./images/portfolio/img-1-desk-min.jpg 1x, ./images/portfolio/img-1-desk@2x-min.jpg 2x" type="image/jpg" />
+                                <img class="portfolio-card-img" srcset="./images/portfolio/img-1-mob-min.jpg 1x, ./images/portfolio/img-1-mob@2x-min.jpg 2x" type="image/jpg" src="./images/portfolio/img-1-mob-min.jpg" alt="Image of Banking App Interface developed by WebStudio" width="288px" loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -295,8 +299,18 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                            <img src="./images/portfolio/cashless-payment.jpg"
-                                alt="Photo of using the cashless payment system developed by WebStudio" width="360">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/img-2-tabl-min.jpg 1x, ./images/portfolio/img-2-tabl@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/img-2-desk-min.jpg 1x, ./images/portfolio/img-2-desk@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="portfolio-card-img"
+                                    srcset="./images/portfolio/img-2-mob-min.jpg 1x, ./images/portfolio/img-2-mob@2x-min.jpg 2x" type="image/jpg"
+                                    src="./images/portfolio/img-2-mob-min.jpg" alt="Photo of using the cashless payment system developed by WebStudio"
+                                    width="288px" loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App</p>
                         </div>
@@ -307,8 +321,18 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                            <img src="./images/portfolio/meditation-app.jpg" alt="Image of Meditation App developed by WebStudio"
-                                width="360">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/img-3-tabl-min.jpg 1x, ./images/portfolio/img-3-tabl@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/img-3-desk-min.jpg 1x, ./images/portfolio/img-3-desk@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="portfolio-card-img"
+                                    srcset="./images/portfolio/img-3-mob-min.jpg 1x, ./images/portfolio/img-3-mob@2x-min.jpg 2x" type="image/jpg"
+                                    src="./images/portfolio/img-3-mob-min.jpg"
+                                    alt="Image of Meditation App developed by WebStudio" width="288px" loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -320,7 +344,18 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                            <img src="./images/portfolio/taxi-service.jpg" alt="Photo of a taxi driver using a road App" width="360">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/img-4-tabl-min.jpg 1x, ./images/portfolio/img-4-tabl@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/img-4-desk-min.jpg 1x, ./images/portfolio/img-4-desk@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="portfolio-card-img"
+                                    srcset="./images/portfolio/img-4-mob-min.jpg 1x, ./images/portfolio/img-4-mob@2x-min.jpg 2x" type="image/jpg"
+                                    src="./images/portfolio/img-4-mob-min.jpg" alt="Photo of a taxi driver using a road App" width="288px"
+                                    loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -332,7 +367,18 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                            <img src="./images/portfolio/screen.jpg" alt="Image of screen illustrations designed by WebStudio" width="360">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/img-5-tabl-min.jpg 1x, ./images/portfolio/img-5-tabl@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/img-5-desk-min.jpg 1x, ./images/portfolio/img-5-desk@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="portfolio-card-img"
+                                    srcset="./images/portfolio/img-5-mob-min.jpg 1x, ./images/portfolio/img-5-mob@2x-min.jpg 2x" type="image/jpg"
+                                    src="./images/portfolio/img-5-mob-min.jpg" alt="Image of screen illustrations designed by WebStudio" width="288px"
+                                    loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -344,8 +390,18 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="portfolio-card-wrapper">
-                        <img src="./images/portfolio/online.jpg"
-                            alt="Photo of a girl making a videocall through a mobile app developed by WebStudio" width="360">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/img-6-tabl-min.jpg 1x, ./images/portfolio/img-6-tabl@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/portfolio/img-6-desk-min.jpg 1x, ./images/portfolio/img-6-desk@2x-min.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="portfolio-card-img"
+                                    srcset="./images/portfolio/img-6-mob-min.jpg 1x, ./images/portfolio/img-5-mob@2x-min.jpg 2x" type="image/jpg"
+                                    src="./images/portfolio/img-6-mob-min.jpg" alt="Photo of a girl making a videocall through a mobile app developed by WebStudio"
+                                    width="288px" loading="lazy">
+                            </picture>
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -362,7 +418,7 @@
         
     </main>
 
-    <!-- #region Footer -- >
+    <!-- #region Footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo">
@@ -373,7 +429,7 @@
                 <p class="footer-heading">Social media</p>
                 <ul class="footer-socials">
                     <li class="footer-social-link">
-                        <a href="" class="social-link" target="_blank" rel="noopener norefferer" aria-label="Link to Instagram site">v
+                        <a href="" class="social-link" target="_blank" rel="noopener norefferer" aria-label="Link to Instagram site">
                             <svg class="social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
@@ -418,7 +474,7 @@
             </div>
         </div>
     </footer>
-    <! -- #endregion -->
+    <!-- #endregion -->
     
     <!-- #region Modal window -->
     <div class="backdrop">
